@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyShop.Core.ViewModel
+{
+   public  class BasketViewSummaryViewModel
+    {
+
+
+        public int BasketCount { get; set; }
+        public decimal BasketTotal { get; set; }
+
+        public BasketViewSummaryViewModel()
+        {
+
+        }
+
+        public BasketViewSummaryViewModel(int basketCount , decimal basketTotal)
+        {
+            this.BasketCount = basketCount;
+            this.BasketTotal = basketTotal;
+
+        }
+
+
+
+    }
+}
